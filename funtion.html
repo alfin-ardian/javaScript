@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function JS</title>
+</head>
+<body>
+    <script>
+      //function declaration
+      function tambah(a,b){
+          var hasil = a + b;
+          return hasil;
+      }
+      document.write('bilangan 6 + 4 adalah ' + tambah(6,4) + '<br>')
+
+      function kurang(a,b){
+          var nilai = a - b;
+          return nilai;
+      }
+      document.write('bilangan 6 - 4 adalah ' + kurang(6,4) + "<br>")
+
+      var kali = function(a,b){
+          var total = a * b;
+          return total;
+      }
+      document.write('bilangan 6 * 4 adalah ' + kali(6,4) + '<br>')
+
+
+      var bagi = function(a,b){
+          var nilai = a / b;
+          return nilai;
+      }
+      document.write("bilangan 6 / 4 adalah " + bagi(6,4) + '<br>')
+
+      function suka(){
+          confirm('aku suka kamu')
+      }
+      suka();
+    </script>
+</body>
+</html>

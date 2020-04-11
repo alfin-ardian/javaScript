@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //method array
+      //length. = menampilkan jumlah array
+      //join = menampilkan seluruh isi array dalam bentuk string
+      //push() = menambah satu/ beberapa data ke array dari belakang
+      //pop() = menghapus hanya satu data di array dari belakang
+      //shift = menghapus data array pertama
+      //unshift = menambah data array pertama
+      //slice = kita ingin mengambil beberapa data dari array untuk menjadi array baru
+      //splice = menyambung / menambal /menyisipkan element di tengah
+      //sort
+      //find = untuk menemukan hanya satu element
+      //filter = untuk menyaringg lebih dari satu element
+      //forEach = looping yang lebih keren
+      //map = return;
+
+      // splice
+      //splice(indexAwal, mauDihapusbrp-opt-, elemen baru-opt-, elementbaru2-opt-,...)
+      var nama = ["alfin", "ardian", "nasrulloh"];
+      nama.splice(2, 0, "ramadhan");
+      console.log(nama);
+      nama.splice(2, 2);
+      console.log(nama);
+
+      //slice
+      //slice menghaasilkan array baru
+      var namaPanggilan = nama.slice(0, 1);
+      console.log(namaPanggilan);
+
+      //forEach
+      var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+      angka.forEach(function (a) {
+        console.log(a);
+      });
+
+      //map
+      var angka2 = angka.map(function (b) {
+        return b * 2;
+      });
+      console.log(angka2);
+    </script>
+  </body>
+</html>

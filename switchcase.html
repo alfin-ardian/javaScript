@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch case</title>
+  </head>
+  <body>
+    <script>
+      var nilai = prompt(
+        "selamat anda mendapat hadiah, silahkan pilih angka 1 - 5"
+      );
+      var hadiah = "";
+
+      switch (nilai) {
+        case "1":
+          hadiah = "kopi";
+          break;
+        case "2":
+          hadiah = "indomie";
+          break;
+        case "3":
+          hadiah = "susu";
+          break;
+        case "4":
+          hadiah = "martabak";
+          break;
+        case "5":
+          hadiah = "motor";
+          break;
+        default:
+          document.write("");
+      }
+      if (hadiah === "") {
+        document.write("anda salah pilih");
+      } else {
+        document.write("selamat anda mendapat " + hadiah);
+      }
+    </script>
+  </body>
+</html>
